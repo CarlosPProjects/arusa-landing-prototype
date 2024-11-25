@@ -30,6 +30,14 @@
     src: url(/fonts/basic-commercial-regular.woff) format('woff');
   }
 
+  @font-face {
+    font-family: 'GTAmericaExtended';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/GT-America-Extended-Regular-Trial.woff2) format('woff2');
+  }
+
   body{
     @apply bg-background
   }  

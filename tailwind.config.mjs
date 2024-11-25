@@ -12,7 +12,7 @@ export default {
 				dark: 'hsl(var(--dark))',
 			},
 			fontFamily: {
-				gt: ['GTAmericaExpended', 'sans-serif'],
+				gt: ['GTAmericaExtended', 'sans-serif'],
 				sans: ['BasicCommercial', 'Helvetica' ,'sans-serif'],
 				serif: ['NeueWorldCondensed', 'serif'],
 			}
