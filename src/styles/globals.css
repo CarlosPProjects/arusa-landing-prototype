@@ -12,7 +12,22 @@
     --dark: 0 0% 12;
     --gt: "GTAmericaExpended", sans-serif;
     --sans: "BasicCommercial", "Helvetica", sans-serif;
-    --serif: "NeueWorldCondensed", "Century", serif;
+  }
+
+  @font-face {
+    font-family: 'NeueWorldCondensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/PPNeueWorld-CondensedRegular.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'BasicCommercial';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/basic-commercial-regular.woff) format('woff');
   }
 
   body{

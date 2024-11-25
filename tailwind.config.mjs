@@ -14,7 +14,7 @@ export default {
 			fontFamily: {
 				gt: ['GTAmericaExpended', 'sans-serif'],
 				sans: ['BasicCommercial', 'Helvetica' ,'sans-serif'],
-				serif: ['NeueWorldCondensed', 'Century', 'serif'],
+				serif: ['NeueWorldCondensed', 'serif'],
 			}
 		},
 	},
