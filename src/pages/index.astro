@@ -1,13 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Container from "../layouts/Container.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Arusa">
-	<h1 class="text-3xl font-serif font-normal">Hello World</h1>
-	<h1 class="text-3xl font-sans font-normal">Hello World</h1>
-	<h1 class="text-3xl font-gt font-normal">Hello World</h1>
+  <main class="w-full h-dvh absolute bg-black">
+    <video autoplay loop muted class="h-full w-full opacity-85 object-cover">
+      <source src="/public/assets/new_tiny_video_header.mp4" type="video/mp4" />
+    </video>
+  </main>
 </Layout>
-
-<style>
-	
-</style>
