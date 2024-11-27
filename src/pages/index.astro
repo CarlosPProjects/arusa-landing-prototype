@@ -1,12 +1,9 @@
 ---
+import Header from "../components/Header.astro";
 import Container from "../layouts/Container.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Arusa">
-  <main class="w-full h-dvh absolute bg-black">
-    <video autoplay loop muted class="h-full w-full opacity-85 object-cover">
-      <source src="/public/assets/new_tiny_video_header.mp4" type="video/mp4" />
-    </video>
-  </main>
+  <Header />
 </Layout>
