@@ -1,5 +1,6 @@
 ---
 import Container from "../layouts/Container.astro";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <div class="fixed top-8 z-10 w-full">
@@ -28,17 +29,23 @@ import Container from "../layouts/Container.astro";
   </Container>
 </div>
 <div class="w-full h-dvh absolute bg-black">
-  <Container
-    className="h-full absolute flex flex-col items-center justify-center text-center text-white z-10"
-  >
-    <h1 class="text-8xl font-serif max-w-3xl __hero-title">
-      <span>SEAMLESS</span>
-      <span>FURNITURE</span>
-      <span>WITH NATURAL</span>
-      <span>FABRICS</span>
-    </h1>
-    <button class="px-8 py-2 uppercase text-[10px] text-primary rounded-md bg-background font-gt hover:bg-primary hover:text-white transition"> shop all </button>
-  </Container>
+  <div class="w-full absolute h-full z-10">
+    <Container
+      className="h-full flex flex-col items-center justify-center text-center text-white"
+    >
+      <h1 class="text-8xl font-serif max-w-3xl __hero-title">
+        <span>SEAMLESS</span>
+        <span>FURNITURE</span>
+        <span>WITH NATURAL</span>
+        <span>FABRICS</span>
+      </h1>
+      <button
+        class="px-8 py-2 uppercase text-[10px] text-primary rounded-md bg-background font-gt hover:bg-primary hover:text-white transition __fadeInUp"
+      >
+        shop all
+      </button>
+    </Container>
+  </div>
   <video autoplay loop muted class="h-full w-full opacity-85 object-cover">
     <source src="/assets/new_tiny_video_header.mp4" type="video/mp4" />
   </video>

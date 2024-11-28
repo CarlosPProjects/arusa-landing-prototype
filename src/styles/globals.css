@@ -41,10 +41,10 @@
   }
 }
 
-@layer components {
-  .__fadeInUp {
-    animation: fadeInUp 0.5s ease forwards;
-  }
+.__fadeInUp {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+  animation-delay: 1s;
 }
 
 .__hero-title span {
