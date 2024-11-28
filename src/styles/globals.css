@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  :root{
+@layer base {
+  :root {
     --primary: 46 33% 29%;
     --accent: 0 0% 98%;
     --text: 0 0% 12;
@@ -36,16 +36,43 @@
     src: url(/fonts/GT-America-Extended-Regular-Trial.woff2) format('woff2');
   }
 
-  body{
+  body {
     @apply bg-background
-  }  
+  }
 }
 
-@layer utilities{
-  .__hero-section{
-    background-image: url('/assets/new_tiny_video_header.mp4');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+@layer components {
+  .__fadeInUp {
+    animation: fadeInUp 0.5s ease forwards;
+  }
+}
+
+.__hero-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.__hero-title span:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.__hero-title span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.__hero-title span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.__hero-title span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
